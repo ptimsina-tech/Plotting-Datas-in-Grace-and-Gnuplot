@@ -1,0 +1,6 @@
+
+
+set style line 1 lc rgb 'red' pt 1
+
+
+plot  'TIMSINA_Box-Muller_method.dat' title 'Pseudo@Random' with points ls 1

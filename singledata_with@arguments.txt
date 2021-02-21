@@ -1,0 +1,31 @@
+# Set linestyle 1 to blue (#0060ad)
+set style line 1 \
+set term eps
+set output 't.eps'
+linecolor rgb '#0060ad' \
+linetype 1 linewidth 0.5 \
+pointtype 1 pointsize 0.05
+set grid
+
+set label 'h=0.1' at 4.0,3.00
+set label 'x_{0}=0.0' at 4.0,2.50
+set label 'y_{0}=0.0' at 4.0,2.00
+set label 'N=20' at 4.0,1.50
+set label 'vx_{0}=20.0' at 4.0,1.00
+set label 'vy_{0}=20.0' at 4.0,0.50
+set title '"y(t)" versus "x(t)"'
+set ylabel 'y(t)'
+set xlabel 'x(t)'
+
+
+
+plot 'TIMSINA_empirical_data.dat' title ' Newton(Trajectory)_{Equation}-{x(t) vs y(t)}' with linespoints linestyle 1
+
+
+
+
+
+
+
+
+

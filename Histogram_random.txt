@@ -1,0 +1,22 @@
+# Set linestyle 1 to blue (#0060ad)
+set style line 1 \
+set term eps
+set output 't.eps'
+linecolor rgb '#0060ad' \
+set grid
+set title 'Histogram representation using the Freedman-Diaconis rule'
+set ylabel 'p(x)'
+set xlabel 'x'
+
+
+
+
+
+plot 'TIMSINA_Histogram_data.dat' title 'Histogram_Representation' with linespoints linestyle 1
+
+
+
+
+
+
+

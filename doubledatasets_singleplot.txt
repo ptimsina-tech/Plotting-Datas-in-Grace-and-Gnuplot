@@ -1,0 +1,44 @@
+# Set linestyle 1 to blue (#0060ad)
+set style line 1 \
+set term eps
+set output 't.eps'
+linecolor rgb '#0060ad' \
+linetype 1 linewidth 0.5 \
+pointtype 1 pointsize 0.05
+set grid
+set label 'For::' at 0.05,3.75
+set label '-------' at 0.05,3.50
+set label 'h=0.01' at 0.05,3.25
+set label 'x_{0}=1.0' at 0.05,3.00
+set label 'y_{0}=5.0' at 0.05,2.75
+set label 'N=200' at 0.05,2.50
+set label 'Alpha=1.0' at 0.05,2.25
+set label 'Beta=0.0' at 0.05,2.00
+set label 'Delta=0.0' at 0.05,1.75
+set label 'Gammaa=1.0' at 0.05,1.50
+set title '"x(t) and y(t)" versus "t"'
+set ylabel 'x(t), y(t)'
+set xlabel 't'
+
+
+# Set linestyle 2 to red (#0060ad)
+set style line 1 \
+set term png
+set output 't.png'
+linecolor rgb "violet" \
+linetype 1 linewidth 0.7 \
+pointtype 7 pointsize 0.05
+set grid
+set ylabel 'x(t), y(t)'
+set xlabel 't'
+
+
+plot 'c.dat' title ' Lotka-Voltera_{Equation}-{x(t) vs t}' with linespoints linestyle 1,  'd.dat' title ' Lotka-Voltera_{Equation}-{y(t) vs t}'  with linespoints linestyle 2
+
+
+
+
+
+
+
+

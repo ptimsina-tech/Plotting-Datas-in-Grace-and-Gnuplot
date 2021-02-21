@@ -1,0 +1,14 @@
+# Set pointstyle 1 to red (#0060ad)
+set style point1 \
+set term eps
+set output 's.eps'
+set pointtype 7 pointsize 1.5
+set title '"Random Number (x)" versus "Random Number (y)"'
+set ylabel 'Random Number (y)'
+set xlabel 'Random Number (x)'
+
+
+plot "TIMSINA_Box-Muller_method.dat"
+
+
+

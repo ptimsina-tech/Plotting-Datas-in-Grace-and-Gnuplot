@@ -1,0 +1,16 @@
+# Set linestyle 2 to red (#0060ad)
+set style line 2 \
+set term png
+set output 's.png'
+linecolor rgb '#0060ad' \
+linetype 2 linewidth 1.0 \
+pointtype 7 pointsize 0.5
+set grid
+set title 'Corresponding primitive function (F(x)) versus Upper-bound (x)'
+set ylabel 'F(x)'
+set xlabel 'x'
+
+
+plot 'b.dat' title 'Simpson' with linespoints linestyle 1
+
+

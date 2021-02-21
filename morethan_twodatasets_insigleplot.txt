@@ -1,0 +1,61 @@
+# Set linestyle 1 to blue (#0060ad)
+set style line 1 \
+set term eps
+set output 't.eps'
+linecolor rgb '#0060ad' \
+linetype 1 linewidth 0.5 \
+pointtype 1 pointsize 0.05
+set grid
+set ylabel 'Sea-level change (m)'
+set xlabel 'Age ka (BP)'
+
+# Set linestyle 2 to red (#0060ad)
+set style line 2 \
+set term png
+set output 't.png'
+linecolor rgb "violet" \
+linetype 1 linewidth 0.7 \
+pointtype 7 pointsize 0.05
+set grid
+
+
+# Set linestyle 3 to green (#27ad81) 
+set style line 3 \
+set term png
+set output 't.png'
+linecolor rgb "cyan" \
+linetype 1 linewidth 0.5 \
+pointtype 7 pointsize 0.05
+set grid
+
+
+
+# Set linestyle 4 to dark purple (#440154)
+set style line 4 \
+set term png
+set output 't.png'
+linecolor rgb "cyan" \
+linetype 1 linewidth 0.5 \
+pointtype 7 pointsize 0.05
+set grid
+
+
+
+# Set linestyle 5 to violet (#0060ad)
+set style line 5 \
+set term png
+set output 't.png'
+linecolor rgb "cyan" \
+linetype 1 linewidth 0.5 \
+pointtype 7 pointsize 0.05
+set grid
+
+
+
+plot '1.dat' title 'NAT' with linespoints linestyle 1,  '2.dat' title 'AN5' with linespoints linestyle 2,  '3.dat' title 'AN1' with linespoints linestyle 3,  '4.dat' title 'AN7' with linespoints linestyle 4,  '5.dat' title 'AN3' with linespoints linestyle 5
+
+
+
+
+
+
